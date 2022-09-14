@@ -8,9 +8,10 @@
 }
 .container {
   /* max-width: 600px; */
-  margin: 40px auto;
+  /* height: 100vh; */
+  margin: 0 auto;
   border: 2px solid;
-  padding: 0.85em;
+  padding: 1em;
   border-radius: 10px;
   background: hsla(302, 82%, 76%, 1);
   background: linear-gradient(190deg, hsla(302, 82%, 76%, 1) 0%, hsla(258, 40%, 68%, 1) 100%);
