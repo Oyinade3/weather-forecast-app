@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  border: 2px solid;
+  padding: 0.85em;
+  border-radius: 10px;
+  background: hsla(302, 82%, 76%, 1);
+  background: linear-gradient(190deg, hsla(302, 82%, 76%, 1) 0%, hsla(258, 40%, 68%, 1) 100%);
+  background: -moz-linear-gradient(190deg, hsla(302, 82%, 76%, 1) 0%, hsla(258, 40%, 68%, 1) 100%);
+  background: -webkit-linear-gradient(190deg, hsla(302, 82%, 76%, 1) 0%, hsla(258, 40%, 68%, 1) 100%);
+  /* background-color: rgb(100, 150, 100); */
+  cursor: default;
+}
+.open{
+  background-color: black;
+}
+.heading{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .85em;
+}
+.search {
+  display: flex;
+  gap: 2px;
+}
+.search input{
+  color: #a18dce;
+}
+.heading button {
+  padding: 0.25em 0.75em;
+  color: #fff;
+  background-color: #a18dce;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 300ms ease;
+  display: flex;
+  align-items: center;
+}
+.search button:hover {
+  background-color: #fff;
+  color: #a18dce;
+}
+.heading .geo-btn{
+  background-color: transparent;
+}
+input {
+  padding: 0.25em 0.75em;
+  border-radius: 5px;
+  border: 1px solid rgb(100, 150, 100);
+  color: black;
+  outline: rgb(100, 150, 100);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.main-display {
+  text-align: center;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.date {
+  font-size: 1.5rem;
+}
+#location{
+  font-size: 2.25rem;
+}
+#time{
+   font-size: 1.25rem;
+}
+.temperature {
+  font-size: 3.5rem;
+}
+sup{
+  font-size: 1.25rem;
+}
+.unit{
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding-right: 2px;
+}
+.active{
+  display: inline-flex;
+  flex-direction: row-reverse;
+  color: rgb(206, 238, 214);
+}
+.big{
+  font-size: 1.5rem;
+}
+#description{
+  font-size: 1.25rem;
+}
+.properties {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  max-width: 90%;
+  margin-inline: auto;
+  flex-wrap: wrap;
+}
+.properties li {
+  text-align: center;
+}
+hr {
+  width: 80%;
+  margin: 10px auto;
+  opacity: .5;
+}
+.days {
+  display: flex;
+  height: 200px;
+  justify-content: space-evenly;
+  padding: 0.5em;
+  text-align: center;
+}
+.days a {
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.first,
+.fifth {
+  align-self: flex-end;
+}
+.second,
+.fourth {
+  align-self: center;
+}

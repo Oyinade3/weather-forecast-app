@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="icon" href="./purple sky.webp">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Oyin's Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+      <form class="search">
+        <input type="text" placeholder="search city..." id="city"/>
+        <button>search</button>
+      </form>
+        <button class="geo-btn">Current
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg>
+      </button>
+      </div>
+      <div class="main-display">
+        <p class="date"><span id="today">Tuesday</span> , <span id="month">August</span> <span id="day_number">8</span>
+          <p id="time"><span id="hour">15</span>:<span id="minute">00</span></p></p>
+        <div id="location">
+          Lagos
+        </div>
+        <p class="temperature"><span id="number">29</span><sup id="degree-box"><span id="celcius" class="unit">°C</span><span>|</span><span id="farenheit" class="unit">°F</span></sup> 
+            ⛅ </p>
+        <div id="description"></div>
+      </div>
+      
+      <ul class="properties">
+        <li>Pressure: <span id="pressure">0</span> P </li>
+        <li>Humidity: <span id="humidity">77</span>% </li>
+        <li>Wind: <span id="wind">8</span> km/h </li>
+      </ul>
+      <hr />
+      <div class="days">
+        <a class="first">
+          <div class="emoji">☁️</div>
+          Friday
+        </a>
+        <a class="second">
+          <div class="emoji">⛈️</div>
+          Saturday
+        </a>
+        <a class="third">
+          <div class="emoji">🌤️</div>
+          Sunday
+        </a>
+        <a class="fourth">
+          <div class="emoji">🌥️</div>
+          Monday
+        </a>
+        <a class="fifth">
+          <div class="emoji">🌦️</div>
+          Tuesday
+        </a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
