@@ -81,6 +81,9 @@ input {
 }
 .temperature {
   font-size: 3.5rem;
+  display: inline-flex;
+  margin-inline: auto;
+  align-items: center;
 }
 sup{
   font-size: 1.25rem;

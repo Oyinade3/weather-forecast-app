@@ -47,7 +47,8 @@ function search(event){
     let cityHumidity = Math.round(response.data.main.humidity);
     let cityWind = Math.round(response.data.wind.speed);
     let cityDescription = response.data.weather[0].description;
-
+    let weatherIcon = response.data.weather[0].icon;
+    let iconUrl = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
     //variables holding the elements
     let displayPlace = document.querySelector("#location");
     let displayCityTemperature = document.querySelector("#number");
@@ -55,6 +56,11 @@ function search(event){
     let displayCityPressure = document.querySelector("#pressure");
     let displayCityHumidity = document.querySelector("#humidity");
     let displayCityWind = document.querySelector("#wind");
+    let displayIcon = document.querySelector(".icon-img");
+    let iconImage = document.createElement('img');
+    iconImage.setAttribute('src', iconUrl);
+    iconImage.setAttribute('alt', cityDescription);
+    displayIcon.appendChild(iconImage)
 
     //code changing the inner content of elements
     displayPlace.innerHTML = place;
